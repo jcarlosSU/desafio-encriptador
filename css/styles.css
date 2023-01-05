@@ -1,0 +1,247 @@
+body {
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #e9ecf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  margin: 1.5em 0 0.5em 0;
+  /* border: 4px solid black; */
+  width: 80%;
+  display: inline-flex;
+}
+.div-texto-a-encriptar {
+  /*  border: 2px solid orangered; */
+  margin-top: 2.5rem;
+}
+h1 {
+  /* border: 2px solid rgb(204, 225, 16); */
+  padding: 0 2em 2em 0;
+  margin-left: -3.7em;
+  margin-top: -1em;
+}
+.logo {
+  padding: 0.8em;
+}
+.principal {
+  /* border: 2px solid blue; */
+  width: 70%;
+}
+.principal div {
+  margin-left: 10%;
+}
+.textarea-encriptar {
+  background-color: #e9ecf8;
+  border: none;
+  color: #0a3871;
+  font-size: 2rem;
+  resize: none;
+  height: 38rem;
+  width: 80%;
+}
+.textarea-encriptar:focus {
+  outline: none;
+}
+.textarea-encriptar::placeholder {
+  color: #0a3871;
+  font-size: 2rem;
+}
+
+h2 {
+  /*   border: 1px solid green; */
+  padding: 0.7em 0;
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.icon-exclamacion {
+  padding-right: 0.5em;
+  width: 18px;
+}
+/* .botones-div input {
+  border: 2px solid yellow;
+} */
+.botones {
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1.1em;
+  margin: 0.3rem 2rem 0.5rem 0;
+  padding: 1.1rem 1.1rem;
+  width: 40%;
+}
+.boton-encriptar {
+  color: #f3f5fc;
+  background-color: #0a3871;
+  border: 1px solid white;
+}
+.boton-desencriptar {
+  border: 1px solid #0a3871;
+  background-color: #e9ecf8;
+  color: #0a3871;
+}
+/* .boton-encriptar:hover {
+} */
+.area-textos {
+  /* border: 1px solid olivedrab; */
+  margin-bottom: 2.2em;
+  position: relative;
+  height: 85.5%;
+}
+.texto-encriptado-descencriptado {
+  background-color: white;
+  border-radius: 1.5em;
+  box-shadow: 0px 8px 18px -1px rgba(170, 178, 213, 1);
+  /*border: 4px solid red; */
+  text-align: center;
+  margin-bottom: -1em;
+  width: 28%;
+}
+.textarea-encriptado {
+  background-color: white;
+  border: none;
+  color: #495057;
+  font-size: 1.5rem;
+  resize: none;
+  height: 28rem;
+  margin-top: 2em;
+  width: 90%;
+}
+
+.textarea-encriptado:focus {
+  outline: none;
+}
+.imagen-vacio {
+  position: absolute;
+  left: 16%;
+  top: 9em;
+  width: 70%;
+  height: 44%;
+}
+.texto-mensaje-no-encontrado {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1em;
+}
+.ingresar-texto {
+  padding: 2em;
+}
+
+.boton-copiar {
+  border: 1px solid #0a3871;
+  background-color: whitesmoke;
+  color: #0a3871;
+  margin: 0.3rem;
+  width: 85%;
+  visibility: hidden;
+}
+footer {
+  padding: 2em;
+  /* border: 2px solid yellowgreen; */
+
+  text-align: center;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .principal {
+    padding-bottom: 2rem;
+    width: 95%;
+  }
+  .principal div {
+    margin-left: 0;
+  }
+  .div-texto-a-encriptar {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .textarea-encriptar {
+    height: 31rem;
+    padding-top: 4rem;
+    width: 100%;
+  }
+  h1 {
+    margin-left: -3em;
+    margin-top: 2em;
+  }
+  .logo {
+    width: 16%;
+  }
+  h2 {
+    margin-left: 1.1rem;
+  }
+  .botones-div {
+    text-align: center;
+  }
+  .botones-div input {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .texto-encriptado-descencriptado {
+    width: 95%;
+  }
+  .imagen-vacio {
+    display: none;
+  }
+
+  .textarea-encriptado {
+    display: none;
+    height: 13rem;
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .boton-copiar {
+    display: none;
+    margin: 2rem;
+    width: 90%;
+  }
+  .ingresar-texto {
+    padding: 0;
+  }
+  .area-textos {
+    height: 67%;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    margin-top: 0;
+  }
+  .logo {
+    width: 29%;
+  }
+  .textarea-encriptar {
+    height: 17rem;
+    padding-top: 1rem;
+  }
+  .textarea-encriptar {
+    font-size: 1.5rem;
+  }
+  .textarea-encriptar::placeholder {
+    font-size: 1.5rem;
+  }
+  .botones-div h2 {
+    margin: 0;
+  }
+  .botones-div input {
+    width: 100%;
+  }
+  .texto-mensaje-no-encontrado {
+    font-size: 1.2em;
+  }
+  .ingresar-texto {
+    font-size: 0.9em;
+    margin: 0 2em;
+  }
+  .boton-copiar {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}

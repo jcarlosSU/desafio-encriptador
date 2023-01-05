@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Codificar Texto</title>
+  </head>
+  <body>
+    <main>
+      <section class="principal">
+        <h1><img class="logo" src="/img/Logo.svg" alt="Logo" /></h1>
+        <div class="div-texto-a-encriptar">
+          <textarea class="textarea-encriptar" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="botones-div">
+          <h2>
+            <img
+              class="icon-exclamacion"
+              src="img/icon-exclamacion.svg"
+              alt="Icono de Exclamación"
+            />Solo letras minúsculas y sin acentos
+          </h2>
+          <input class="botones boton-encriptar" type="button" value="Encriptar!" />
+          <input class="botones boton-desencriptar" type="button" value="Desencriptar!" />
+        </div>
+      </section>
+      <section class="texto-encriptado-descencriptado">
+        <div class="area-textos">
+          <textarea class="textarea-encriptado" readonly></textarea>
+          <img
+            class="imagen-vacio mostrar-si-no"
+            src="img/noMensaje.svg"
+            alt="Imagen de texto vacía"
+          />
+          <p class="texto-mensaje-no-encontrado mostrar-si-no">Ningún mensaje fue encontrado</p>
+          <p class="ingresar-texto mostrar-si-no">
+            Ingresa el texto que desees encriptar o desencriptar
+          </p>
+        </div>
+        <input class="botones boton-copiar" type="button" value="Copiar" />
+      </section>
+    </main>
+    <footer>Realizado por: JCSU</footer>
+    <script src="js/encriptar.js"></script>
+  </body>
+</html>
