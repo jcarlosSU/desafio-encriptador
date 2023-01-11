@@ -34,7 +34,7 @@ function encriptar() {
     if (blnValidar) {
       imgYTexto.forEach((elemento) => (elemento.style.visibility = "hidden"));
       btnCopiar.style.visibility = "visible";
-      encriptarTexto(textareaEncriptar.value, 1);
+      encriptarTexto(textareaEncriptar.value);
       textareaEncriptar.value = "";
       if (textareaEncriptar.clientWidth <= 768) {
         btnCopiar.style.display = "inline-block";
@@ -56,7 +56,7 @@ function encriptar() {
 
 function desencriptar() {
   if (textareaEncriptar.value !== "") {
-    desencriptarTexto(textareaEncriptar.value, 0);
+    desencriptarTexto(textareaEncriptar.value);
     textareaEncriptar.value = "";
   }
 }
