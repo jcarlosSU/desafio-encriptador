@@ -63,11 +63,10 @@ function desencriptar() {
 
 function copiarTexto() {
   textareaEncriptado.select();
-  document.execCommand("copy");
+  textareaEncriptado.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(textareaEncriptado.value);
 }
 
 btnEncriptar.addEventListener("click", encriptar);
 btnDesencriptar.addEventListener("click", desencriptar);
 btnCopiar.addEventListener("click", copiarTexto);
-
-/* ^[a-z]+$  solo letras minusculas y sin acentos */
